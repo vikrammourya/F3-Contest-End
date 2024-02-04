@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+#ip{
+    margin-left: 10rem;
+}
+#ipDetails {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+}
+
+.first-line,.second-line {
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#map {
+    /* width: 88vw; */
+    /* height: 80vh; */
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(87, 90, 133, 1);
+}
+
+#map p {
+    background-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgba(184, 188, 204, 1);
+    margin-bottom: 20px;
+}
+
+/* Mpre Info */
+#moreInfo {
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#moreInfo>p {
+    align-self: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgba(184, 188, 204, 1);
+}
+
+#moreInfo>div p {
+    color: rgba(184, 188, 204, 0.5);
+    font-weight: 700;
+    font-size: 34px;
+}
+
+
+#postOfficeList {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: space-around;
+    padding: 20px; 
+}
+
+
+.search-containe {
+    padding-top: 15px;
+    border-radius: 8px;
+    max-width: 400px; 
+    font-size: 30px;
+    font-weight: 700;
+    color: rgba(184, 188, 204, 1);
+    margin: 0 auto; /* Center the container on the page */
+}
+
+.search-title {
+    margin-right: 80px;
+    font-weight: bold;
+}
+
+#searchbox {
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    flex-grow: 1;
+    font-size: 14px;
+    width: 85rem;
+}
+.search-container{
+    margin-left: 65px;
+    box-shadow: none;
+}
+#searchbox::placeholder {
+    color: #999;
+}
+
+
+/* Style for the postOffice-card container */
+.postOffice-card {
+    flex: 0 0 calc(25% - 30px); /* Set flex property to create 4 cards in one line with margin */
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin: 20px; /* Adjust margin to create space between cards */
+    border-radius: 5px;
+    background-color: #bcf0ff;
+}
+
+/* Style for the paragraphs inside postOffice-card */
+.postOffice-card p {
+    margin: 5px 0;
+    background: none;
+    color: black;
+    font-size: 25px;
+}
